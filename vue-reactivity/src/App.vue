@@ -2,7 +2,10 @@
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
   <HomePage msg="Welcome to Your Vue.js App"/>
+  <HomePage msg="App"/>
+  <HomePage msg="Welcome to Your Vue.js App" product="apple"/>
   <h1>{{ products }}</h1>
+
 </template>
 
 <script>
