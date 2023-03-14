@@ -3,7 +3,8 @@
   <HelloWorld msg="Welcome to Your Vue.js App"/>
   <HomePage msg="Welcome to Your Vue.js App"/>
   <HomePage msg="App"/>
-  <HomePage msg="Welcome to Your Vue.js App" product="apple"/>
+  <HomePage msg="Welcome to Your Vue.js App"/>
+  
   <h1>{{ products }}</h1>
 
 </template>
