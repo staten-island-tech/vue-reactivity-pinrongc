@@ -8,8 +8,8 @@
   </li>
 </ul> 
 
-<button v-if="loggedIn">Log Out</button>
-<button v-else>Log In</button>
+<button v-on:click = "authState" v-if="loggedIn">Log Out</button>
+<button  v-on:click = "authState" v-else>Log In</button>
  </div>
 
 
