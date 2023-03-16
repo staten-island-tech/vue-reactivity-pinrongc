@@ -1,5 +1,5 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+
  
   <HomePage msg="Welcome to Your Vue.js App"/>
   <HomePage msg="App"/>
@@ -12,7 +12,7 @@
 
 <script>
 
-import HomePage from './components/main.vue'
+import HomePage from '../components/main.vue'
 
 export default {
   name: 'App',
