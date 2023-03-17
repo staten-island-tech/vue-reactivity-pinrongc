@@ -1,11 +1,9 @@
 <template>
-<div class="card">
-    <h2>{{ title }}</h2>
-    <img :src="image" alt=""/>
-    <h3>{{ price }}</h3>
-</div>    
 
-<card
+   <div class="home">
+    
+    
+    <CardVue
 
 v-for="destination in destinations"
 :key="destination.name"
@@ -13,23 +11,22 @@ v-for="destination in destinations"
 :price="destination.price"
 :image="destination.img"
 /> 
-
-
-   
-   </template>;
-     
-     <script>
-   
+   </div>
     
-     export default {
-            name: "Card",
-            props: {
-                title:String,
-                price: Number,
-                image: String,
-            },
+</template>
 
-            data() {
+
+<script>
+import CardVue from "../components/CardVue.vue";
+
+export default {
+    name: "Home",
+    components: {
+        CardVue, 
+    },
+        
+        data() {
+
                 return {
                     selected: "",
                     destinations: [
@@ -53,15 +50,10 @@ v-for="destination in destinations"
                     ]
                 }
             }
-     }; 
+    }
 
-   
-     </script>
-    
-   
-     <style>
-     .home-page{
-       background-color: aquamarine;
-     }
-     </style>
-     
+
+
+
+
+</script>
