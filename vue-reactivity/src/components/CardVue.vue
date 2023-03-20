@@ -3,13 +3,13 @@
     <h2>{{ title }}</h2>
     <img :src="image" alt=""/>
     <h3>{{ price }}</h3>
-</div>    
 
+</div>    
    
-   </template>;
+</template>;
      
      <script>
-   
+  
      export default {
             name: "CardVue",
             props: {
