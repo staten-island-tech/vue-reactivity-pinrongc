@@ -1,31 +1,22 @@
 <template>
-
- 
-  <HomePage msg="Welcome to Your Vue.js App"/>
-  <HomePage msg="App"/>
-  <HomePage msg="2"/>
-  <CardVue msg = "hello"/>
-
+  <HomePage msg="App" />
+  <HomeMain msg="Products" />
+  <cartpage msg="Products" />
 </template>
 
 <script>
-
-import HomePage from '../components/main.vue'
-import CardVue from "../components/CardVue.vue";
-import Home from "../views/Home.vue"
-
+import HomePage from "../components/main.vue";
+import HomeMain from "../views/Home.vue";
+import cartpage from "../components/CartPage.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HomePage,
-    CardVue,
-    Home
-  }
-}
+    HomeMain,
+    cartpage,
+  },
+};
 </script>
 
-<style>
-
-</style>
-
+<style></style>
