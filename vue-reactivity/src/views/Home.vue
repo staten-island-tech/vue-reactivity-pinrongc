@@ -60,21 +60,6 @@ export default {
           price: 10,
           img: "https://images.immediate.co.uk/production/volatile/sites/30/2020/02/Glass-and-bottle-of-milk-fe0997a.jpg",
         },
-        {
-          name: "milk",
-          price: 10,
-          img: "https://images.immediate.co.uk/production/volatile/sites/30/2020/02/Glass-and-bottle-of-milk-fe0997a.jpg",
-        },
-        {
-          name: "milk",
-          price: 10,
-          img: "https://images.immediate.co.uk/production/volatile/sites/30/2020/02/Glass-and-bottle-of-milk-fe0997a.jpg",
-        },
-        {
-          name: "milk",
-          price: 10,
-          img: "https://images.immediate.co.uk/production/volatile/sites/30/2020/02/Glass-and-bottle-of-milk-fe0997a.jpg",
-        },
       ],
     };
   },

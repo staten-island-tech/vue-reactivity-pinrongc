@@ -1,8 +1,5 @@
 <template>
-  <div class="cartpage">
-    <button>Add to Cart</button>
-    <button>Remove from Cart</button>
-  </div>
+  <div class="cartpage"></div>
 </template>
 
 <script>

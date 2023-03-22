@@ -3,6 +3,13 @@
     <h2>{{ title }}</h2>
     <img :src="image" alt="" />
     <h3>{{ price }}</h3>
+
+    <button @click="store.count++">
+      {{ store.count }}
+    </button>
+
+    <button>Add to cart</button>
+    <button>Remove from cart</button>
   </div>
 </template>
 ;
@@ -28,7 +35,7 @@ export default {
 }
 
 img {
-  height: 100px;
+  height: 200px;
   width: auto;
   max-width: 100%;
   margin: 1%;
