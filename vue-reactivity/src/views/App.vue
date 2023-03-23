@@ -17,7 +17,11 @@ export default {
     HomePage,
     HomeMain,
     cartpage,
-    store,
+  },
+  data() {
+    return {
+      store,
+    };
   },
 };
 </script>

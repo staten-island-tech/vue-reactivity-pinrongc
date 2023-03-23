@@ -15,6 +15,7 @@
 ;
 
 <script>
+import { store } from "../store";
 export default {
   name: "CardVue",
   props: {
@@ -22,6 +23,12 @@ export default {
     price: Number,
     image: String,
   },
+  data() {
+    return {
+      store,
+    };
+  },
+  methods: {},
 };
 </script>
 
