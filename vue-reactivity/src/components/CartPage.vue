@@ -3,10 +3,18 @@
 </template>
 
 <script>
+import { store } from "../store";
 export default {
   name: "HelloWorldd",
   props: {
-    msg: String,
+    title: String,
+    price: Number,
+    image: String,
+  },
+  data() {
+    return {
+      store,
+    };
   },
 };
 </script>

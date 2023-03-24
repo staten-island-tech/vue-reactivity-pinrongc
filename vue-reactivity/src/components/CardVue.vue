@@ -3,13 +3,7 @@
     <h2>{{ title }}</h2>
     <img :src="image" alt="" />
     <h3>{{ price }}</h3>
-
-    <button @click="store.count++">
-      {{ store.count }}
-    </button>
-
-    <button>Add to cart</button>
-    <button>Remove from cart</button>
+    <button @click="AddToCart()">Add to cart</button>
   </div>
 </template>
 ;
@@ -28,7 +22,15 @@ export default {
       store,
     };
   },
-  methods: {},
+  methods: {
+    AddToCart() {
+      store.cart.push({
+        name: this.name,
+        price: this.price,
+        image: this.image,
+      });
+    },
+  },
 };
 </script>
 
