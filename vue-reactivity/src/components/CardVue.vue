@@ -23,12 +23,14 @@ export default {
     };
   },
   methods: {
-    AddToCart() {
-      store.cart.push({
+    AddToCart(total) {
+      this.cart.push(total);
+      this.total += total.price;
+      /*       store.cart.push({
         name: this.name,
         price: this.price,
         image: this.image,
-      });
+      }); */
     },
   },
 };

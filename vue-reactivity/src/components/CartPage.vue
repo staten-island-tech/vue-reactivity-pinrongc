@@ -1,11 +1,12 @@
 <template>
-  <div class="cartpage"></div>
+  <div class="CartPage"></div>
+  <h2>{{ title }}, {{ price }}</h2>
 </template>
 
 <script>
 import { store } from "../store";
 export default {
-  name: "HelloWorldd",
+  name: "CartPage",
   props: {
     title: String,
     price: Number,
