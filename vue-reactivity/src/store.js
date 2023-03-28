@@ -24,11 +24,6 @@ export const store = reactive({
       price: 30,
       img: "https://stylesweet.com/wp-content/uploads/2022/06/ChocolateCakeForTwo_Featured.jpg",
     },
-    {
-      name: "milk",
-      price: 10,
-      img: "https://images.immediate.co.uk/production/volatile/sites/30/2020/02/Glass-and-bottle-of-milk-fe0997a.jpg",
-    },
   ],
   cart: [],
   total: 0,

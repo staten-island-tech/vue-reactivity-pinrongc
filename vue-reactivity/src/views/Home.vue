@@ -3,7 +3,7 @@
     <CardVue
       v-for="destination in store.destinations"
       :key="destination.name"
-      :title="destination.name"
+      :name="destination.name"
       :price="destination.price"
       :image="destination.img"
     />
@@ -11,9 +11,9 @@
 
   <div class="display">
     <CartPage
-      v-for="destination in store.destinations"
+      v-for="destination in store.cart"
       :key="destination.name"
-      :title="destination.name"
+      :name="destination.name"
       :price="destination.price"
       :image="destination.img"
     />

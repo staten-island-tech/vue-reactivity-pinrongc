@@ -1,6 +1,7 @@
 <template>
   <div class="CardVue">
-    <h2>{{ title }}</h2>
+    <h2>{{ name }}</h2>
+
     <img :src="image" alt="" />
     <h3>{{ price }}</h3>
     <button @click="AddToCart()">Add to cart</button>
@@ -13,7 +14,7 @@ import { store } from "../store";
 export default {
   name: "CardVue",
   props: {
-    title: String,
+    name: String,
     price: Number,
     image: String,
   },
@@ -23,14 +24,14 @@ export default {
     };
   },
   methods: {
-    AddToCart(total) {
-      this.cart.push(total);
-      this.total += total.price;
-      /*       store.cart.push({
+    AddToCart() {
+      /*     this.cart.push(total);
+      this.total += total.price; */
+      store.cart.push({
         name: this.name,
         price: this.price,
         image: this.image,
-      }); */
+      });
     },
   },
 };
@@ -40,7 +41,7 @@ export default {
 .CardVue {
   background-color: rgb(242, 183, 242);
   flex-wrap: wrap;
-  display: flex;
+
   justify-content: center;
   margin: 10px 10px 50px 15px;
 }
