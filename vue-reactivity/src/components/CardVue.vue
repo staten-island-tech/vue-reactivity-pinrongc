@@ -1,9 +1,9 @@
 <template>
   <div class="CardVue">
     <h2>{{ name }}</h2>
-
     <img :src="image" alt="" />
     <h3>{{ price }}</h3>
+    <h4>{{ total }}</h4>
     <button @click="AddToCart()">Add to cart</button>
   </div>
 </template>
@@ -25,14 +25,20 @@ export default {
   },
   methods: {
     AddToCart() {
-      /*     this.cart.push(total);
-      this.total += total.price; */
+      /*   store.cart.push(index);
+      this.carttotal += index.price;
+      this.cartTotal = this.carttotal.toFixed(2);
+      this.numerItems += 1; */
+
       store.cart.push({
         name: this.name,
         price: this.price,
         image: this.image,
       });
     },
+    /*     displaycart: function () {
+      this.active = !this.active;
+    }, */
   },
 };
 </script>
