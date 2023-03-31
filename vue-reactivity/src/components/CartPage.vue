@@ -1,6 +1,7 @@
 <template>
   <div class="CartPage"></div>
-  <h2>{{ name }}, {{ image }}, {{ price }}</h2>
+  <h2>{{ name }},{{ price }}</h2>
+  <h3>{{ store.total }}</h3>
 </template>
 
 <script>

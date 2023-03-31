@@ -27,7 +27,6 @@ export const store = reactive({
   ],
   cart: [],
   total: 0,
-  carttotal: 0,
   cartTotal: 0,
   numberItems: 0,
   active: false,
