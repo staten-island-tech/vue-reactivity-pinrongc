@@ -1,7 +1,13 @@
-<template>
-  <div class="CartPage"></div>
-  <h2>{{ name }},{{ price }}</h2>
-  <h3>{{ store.total }}</h3>
+<template> 
+<header>
+<div class="CartPage">
+  <h2> Product: {{ name }}</h2>
+  <h3> Total: ${{ store.total }}</h3>
+  <h4> Number of Items:{{ store.numberItems }}</h4>
+
+  </div>
+</header>
+  
 </template>
 
 <script>

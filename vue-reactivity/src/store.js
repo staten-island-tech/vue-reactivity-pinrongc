@@ -21,13 +21,12 @@ export const store = reactive({
 
     {
       name: "cake",
-      price: 30,
+      price: 0,
       img: "https://stylesweet.com/wp-content/uploads/2022/06/ChocolateCakeForTwo_Featured.jpg",
     },
   ],
   cart: [],
   total: 0,
-  cartTotal: 0,
   numberItems: 0,
   active: false,
 });

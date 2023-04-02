@@ -3,10 +3,11 @@
     <h2>{{ name }}</h2>
     <img :src="image" alt="" />
     <h3>{{ price }}</h3>
-
     <button @click="AddToCart()">Add to cart</button>
     <button @click="RemoveItem()">Remove Item</button>
-  </div>
+ 
+  </div>   
+
 </template>
 ;
 
@@ -26,20 +27,14 @@ export default {
   },
   methods: {
     AddToCart() {
-      /*     store.cart.push(product);
-      this.carttotal += product.price;
-      this.numberItems += 1; */
-
       store.cart.push({
         name: this.name,
         price: this.price,
         image: this.image,
       });
       store.total += this.price;
+      store.numberItems += 1;
     },
-    /*     displaycart: function () {
-      this.active = !this.active;
-    }, */
 
     RemoveItem() {
       /*     store.cart.push(product);
@@ -52,6 +47,7 @@ export default {
         image: this.image,
       });
       store.total -= this.price;
+      store.numberItems -= 1;
     },
   },
 };

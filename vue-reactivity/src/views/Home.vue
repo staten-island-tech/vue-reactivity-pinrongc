@@ -1,5 +1,17 @@
 <template>
-  <div class="home">
+
+
+  <div class="products">
+    <CartPage
+      v-for="destination in store.cart"
+      :key="destination.name"
+      :name="destination.name"
+      :price="destination.price"
+      :image="destination.img"
+    />
+  </div>
+
+ <div class="home">
     <CardVue
       v-for="destination in store.destinations"
       :key="destination.name"
@@ -9,15 +21,11 @@
     />
   </div>
 
-  <div class="display">
-    <CartPage
-      v-for="destination in store.cart"
-      :key="destination.name"
-      :name="destination.name"
-      :price="destination.price"
-      :image="destination.img"
-    />
-  </div>
+
+
+ 
+
+
 </template>
 
 <script>
@@ -34,6 +42,7 @@ export default {
   data() {
     return {
       store,
+
     };
   },
 };
