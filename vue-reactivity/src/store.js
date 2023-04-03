@@ -7,13 +7,13 @@ export const store = reactive({
       price: 5,
       img: "https://www.collinsdictionary.com/images/full/apple_158989157.jpg",
     },
-   
+
     {
       name: "orange",
       price: 5,
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIEftk1FJm9bXeHw0pF_e8lh7H0-TJwQyZjA&usqp=CAU",
     },
-{
+    {
       name: "banana",
       price: 5,
       img: "https://images.heb.com/is/image/HEBGrocery/000377497",
@@ -27,17 +27,17 @@ export const store = reactive({
     {
       name: "tomato",
       price: "6",
-      img: "https://jugais.com/wp-content/uploads/2020/07/tomate-1.jpg"
+      img: "https://jugais.com/wp-content/uploads/2020/07/tomate-1.jpg",
     },
 
     {
       name: "potato",
       price: "8",
-      img: "https://images.heb.com/is/image/HEBGrocery/000318982-1"
+      img: "https://images.heb.com/is/image/HEBGrocery/000318982-1",
     },
 
-
-    {name: "milk",
+    {
+      name: "milk",
       price: 10,
       img: "https://images.immediate.co.uk/production/volatile/sites/30/2020/02/Glass-and-bottle-of-milk-fe0997a.jpg",
     },
@@ -53,12 +53,8 @@ export const store = reactive({
       price: 30,
       img: "https://stylesweet.com/wp-content/uploads/2022/06/ChocolateCakeForTwo_Featured.jpg",
     },
-   
-    
-    
   ],
   cart: [],
   total: 0,
   numberItems: 0,
-  active: false,
 });

@@ -30,17 +30,4 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.CartPage {
-  background-color: rgb(249, 203, 203);
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-bottom: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 30px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-}
-</style>
+<style scoped></style>
