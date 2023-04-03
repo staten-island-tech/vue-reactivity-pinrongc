@@ -3,7 +3,7 @@
  <div class="CardVue">
 
     <div class="products">
-<h2>{{ name }}</h2>
+    <h2>{{ name }}</h2>
     <img :src="image" alt="" />
     <h3>${{ price }}</h3>
     <button @click="AddToCart()">Add to cart</button>

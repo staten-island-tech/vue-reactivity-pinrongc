@@ -1,6 +1,8 @@
 <template>
 
 <div class="page">
+<h1>Grocery Store</h1>
+
 <div class="products">
     <CartPage
       v-for="destination in store.cart"
@@ -50,7 +52,10 @@ export default {
 </script>
 
 <style>
-
+.page {
+  text-align: center;
+  font-family: 'Khand', sans-serif;
+}
 
 </style>
 
