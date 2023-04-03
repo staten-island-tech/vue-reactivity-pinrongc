@@ -1,10 +1,19 @@
 <template>
   <div class="CardVue">
-    <h2>{{ name }}</h2>
+
+
+    <div class="products">
+<h2>{{ name }}</h2>
     <img :src="image" alt="" />
     <h3>{{ price }}</h3>
     <button @click="AddToCart()">Add to cart</button>
     <button @click="RemoveItem()">Remove Item</button>
+
+
+
+
+    </div>
+    
  
   </div>   
 
@@ -55,22 +64,24 @@ export default {
 
 <style>
 .CardVue {
-  background-color: rgb(242, 183, 242);
-  flex-wrap: wrap;
+  background-color: rgb(214, 242, 183);
+  margin: 10px;
+  padding: 15px;
+  min-width: 20%;
 
-  justify-content: center;
-  margin: 10px 10px 50px 15px;
+
 }
 
 img {
   height: 200px;
   width: auto;
   max-width: 100%;
-  margin: 1%;
 }
 
 .home {
+  text-align: center;
   display: flex;
   justify-content: center;
+  overflow-y: auto;
 }
 </style>
