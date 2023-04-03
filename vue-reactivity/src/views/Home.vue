@@ -1,7 +1,7 @@
 <template>
 
-
-  <div class="products">
+<div class="page">
+<div class="products">
     <CartPage
       v-for="destination in store.cart"
       :key="destination.name"
@@ -23,7 +23,8 @@
 
 
 
- 
+
+</div>
 
 
 </template>
@@ -47,3 +48,9 @@ export default {
   },
 };
 </script>
+
+<style>
+
+
+</style>
+

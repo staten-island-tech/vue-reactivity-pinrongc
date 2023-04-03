@@ -1,21 +1,19 @@
 <template>
-  <div class="CardVue">
-
+  <div class="page">
+ <div class="CardVue">
 
     <div class="products">
 <h2>{{ name }}</h2>
     <img :src="image" alt="" />
-    <h3>{{ price }}</h3>
+    <h3>${{ price }}</h3>
     <button @click="AddToCart()">Add to cart</button>
     <button @click="RemoveItem()">Remove Item</button>
-
-
-
-
     </div>
     
  
   </div>   
+  </div>
+ 
 
 </template>
 ;
@@ -81,8 +79,10 @@ img {
 .home {
   text-align: center;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   overflow-y: hidden;
-
+  flex-wrap: wrap;
 }
+
 </style>

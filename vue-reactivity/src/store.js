@@ -24,6 +24,17 @@ export const store = reactive({
       img: "https://www.hopkinsmedicine.org/sebin/t/y/broccoli-content.jpg",
     },
 
+    {
+      name: "tomato",
+      price: "6",
+      img: "https://jugais.com/wp-content/uploads/2020/07/tomate-1.jpg"
+    },
+
+    {
+      name: "potato",
+      price: "8",
+      img: "https://images.heb.com/is/image/HEBGrocery/000318982-1"
+    },
 
 
     {name: "milk",
