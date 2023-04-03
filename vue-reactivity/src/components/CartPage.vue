@@ -33,6 +33,7 @@ export default {
 background-color: rgb(243, 180, 180);
 margin-left: 30%;
 margin-right: 30%;
+margin-bottom: 10px;
 padding-top: 10px;
 padding-bottom: 10px;
 border-radius: 50px;

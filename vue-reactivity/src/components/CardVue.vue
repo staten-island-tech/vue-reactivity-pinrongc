@@ -65,10 +65,10 @@ export default {
 <style>
 .CardVue {
   background-color: rgb(214, 242, 183);
+  position: relative;
   margin: 10px;
   padding: 15px;
-  min-width: 20%;
-
+  min-width: 15%;
 
 }
 
@@ -82,6 +82,7 @@ img {
   text-align: center;
   display: flex;
   justify-content: center;
-  overflow-y: auto;
+  overflow-y: hidden;
+
 }
 </style>
