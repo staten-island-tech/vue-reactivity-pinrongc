@@ -30,11 +30,11 @@ export default {
   },
   methods: {
     AddToCart() {
-      store.cart = {
+      store.cart.push({
         name: this.name,
         price: this.price,
         image: this.image,
-      };
+      });
       store.total += this.price;
       store.numberItems += 1;
     },
