@@ -1,7 +1,7 @@
 import { reactive } from "vue";
 
 export const store = reactive({
-  destinations: [
+  products: [
     {
       name: "Apple",
       price: 5,
@@ -32,7 +32,7 @@ export const store = reactive({
     {
       name: "Strawberry",
       price: 3,
-      img: "https://farzana.ae/images/thumbs/0005008_strawberries.jpeg",
+      img: "https://www.yogurt-land.com/assets/593.png",
     },
 
     {
@@ -46,7 +46,11 @@ export const store = reactive({
       price: 7,
       img: "https://cdn.shopify.com/s/files/1/0336/7167/5948/products/1-pound-image-of-red-fresno-peppers-vegetables-33420304941100_600x600.jpg?v=1677888833",
     },
-
+{
+  name: "Jalapeño Pepper",
+  price: 8,
+img: "https://cdn.shopify.com/s/files/1/0271/6634/3237/products/522485-01_jpeg.jpg?v=1602839728"
+},
     {
       name: "Tomato",
       price: 6,

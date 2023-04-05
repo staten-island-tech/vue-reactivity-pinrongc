@@ -1,16 +1,13 @@
 <template>
-  <div class="page">
-    <div class="CardVue">
-      <div class="products">
+
+    <div class="CardVue">  
         <h2>{{ name }}</h2>
         <img :src="image" alt="" />
         <h3>${{ price }}</h3>
 
-        <button @click="AddToCart()">Add to cart</button>
-        <button @click="RemoveItem()">Remove Item</button>
-      </div>
+        <button id = "Add" @click="AddToCart()">Add to cart</button>
+        <button id = "Remove" @click="RemoveItem()">Remove Item</button>
     </div>
-  </div>
 </template>
 ;
 
@@ -33,7 +30,6 @@ export default {
       store.cart.push({
         name: this.name,
         price: this.price,
-        image: this.image,
       });
       store.total += this.price;
       store.numberItems += 1;
@@ -54,17 +50,17 @@ export default {
 
 <style>
 .CardVue {
-  background-color: rgb(214, 242, 183);
+  background-color: #00000063;
+  color: white;
   position: relative;
-  margin: 10px;
+  margin: 15px;
   padding: 15px;
-  min-width: 15%;
+  min-width: 5%;
   border-radius: 5%;
 }
 
 img {
-  height: 200px;
-  width: auto;
+  height: 180px;
   max-width: 100%;
 }
 
@@ -75,5 +71,19 @@ img {
   justify-content: center;
   overflow-y: hidden;
   flex-wrap: wrap;
+  margin-left: 180px;
+
+}
+
+#Add{
+  width: 5rem;
+  height: 25px;
+  font-weight: bold;
+}
+
+#Remove{
+  width: 6rem;
+    height: 25px;
+    font-weight: bold;
 }
 </style>

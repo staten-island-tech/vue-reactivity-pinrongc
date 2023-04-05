@@ -1,27 +1,17 @@
-<template>
-  <div class="page">
-    <h1>Grocery Store</h1>
+<template> 
+ <header>Grocery Store</header>
 
-    <div class="products">
-      <CartPage
-        v-for="destination in store.cart"
-        :key="destination.name"
-        :name="destination.name"
-        :price="destination.price"
-        :image="destination.img"
-      />
-    </div>
-
+    <CartPage/>
     <div class="home">
       <CardVue
-        v-for="destination in store.destinations"
-        :key="destination.name"
-        :name="destination.name"
-        :price="destination.price"
-        :image="destination.img"
+        v-for="product in store.products"
+        :key="product.name"
+        :name="product.name"
+        :price="product.price"
+        :image="product.img"
       />
     </div>
-  </div>
+
 </template>
 
 <script>
@@ -29,11 +19,13 @@ import CardVue from "../components/CardVue.vue";
 import { store } from "../store";
 import CartPage from "../components/CartPage.vue";
 
+
 export default {
   name: "HomeMain",
   components: {
     CardVue,
     CartPage,
+
   },
   data() {
     return {
@@ -44,8 +36,19 @@ export default {
 </script>
 
 <style>
+
+header{
+  font-size: 50px;
+  text-align: center
+}
 .page {
   text-align: center;
   font-family: "Khand", sans-serif;
 }
+
+body{
+  background-image: url("https://wallpaperaccess.com/full/1624848.jpg");
+}
+
+
 </style>
