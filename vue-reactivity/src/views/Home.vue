@@ -3,7 +3,6 @@
 
  <img id="move" src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png" alt="">
 
-
     <CartPage/>
     <div class="home">
       <CardVue
