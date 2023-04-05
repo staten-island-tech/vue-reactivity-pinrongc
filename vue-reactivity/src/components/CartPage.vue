@@ -1,10 +1,9 @@
 <template>
     <div class="CartTotal">
-      <label for="Total"> Total: ${{ store.total }}</label>
+
+   Total: ${{ store.total }}
       <br />
-      <label for="Number of Items">
-        Number of Items: {{ store.numberItems }}</label
-      >
+        Number of Items: {{ store.numberItems }}
     </div>
 
     <div class="cart">
@@ -57,7 +56,7 @@ resetcart: function (){
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .CartTotal {
-  background-color: #f9cbcbbb;
+  background-color: #f9cbcbc4;
   margin-left: 30%;
   margin-right: 30%;
   margin-bottom: 10px;
@@ -72,8 +71,8 @@ resetcart: function (){
 
 .cart{
   position: absolute;
-  top: 160px;
-  background-color: #ffffff95;
+  top: 14rem;
+  background-color: #ffffffa9;
   border-radius: 10px;
   padding: 25px;
   font-size: 13px;

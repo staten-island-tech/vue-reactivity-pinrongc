@@ -50,7 +50,7 @@ export default {
 
 <style>
 .CardVue {
-  background-color: #00000063;
+  background-color: #00000078;
   color: white;
   position: relative;
   margin: 15px;

@@ -1,6 +1,9 @@
 <template> 
  <header>Grocery Store</header>
 
+ <img id="move" src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png" alt="">
+
+
     <CartPage/>
     <div class="home">
       <CardVue
@@ -48,6 +51,25 @@ header{
 
 body{
   background-image: url("https://wallpaperaccess.com/full/1624848.jpg");
+}
+
+#move {
+    width: 80px;
+    animation: LtoR 9s linear infinite;
+    transition: all 5s;
+    position: relative;
+    height: 60px;
+}
+
+
+@keyframes LtoR {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: calc(100% - 100px)
+    }
 }
 
 
