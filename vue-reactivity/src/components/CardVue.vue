@@ -1,13 +1,12 @@
 <template>
+  <div class="CardVue">
+    <h2>{{ name }}</h2>
+    <img :src="image" alt="" />
+    <h3>${{ price }}</h3>
 
-    <div class="CardVue">  
-        <h2>{{ name }}</h2>
-        <img :src="image" alt="" />
-        <h3>${{ price }}</h3>
-
-        <button id = "Add" @click="AddToCart()">Add to cart</button>
-        <button id = "Remove" @click="RemoveItem()">Remove Item</button>
-    </div>
+    <button id="Add" @click="AddToCart()">Add to cart</button>
+    <!--     <button id="Remove" @click="RemoveItem()">Remove Item</button> -->
+  </div>
 </template>
 ;
 
@@ -34,7 +33,7 @@ export default {
       store.total += this.price;
       store.numberItems += 1;
     },
-
+    /* 
     RemoveItem() {
       store.cart.push({
         name: this.name,
@@ -43,7 +42,7 @@ export default {
       });
       store.total -= this.price;
       store.numberItems -= 1;
-    },
+    }, */
   },
 };
 </script>
@@ -72,18 +71,17 @@ img {
   overflow-y: hidden;
   flex-wrap: wrap;
   margin-left: 180px;
-
 }
 
-#Add{
+#Add {
   width: 5rem;
   height: 25px;
   font-weight: bold;
 }
 
-#Remove{
+#Remove {
   width: 6rem;
-    height: 25px;
-    font-weight: bold;
+  height: 25px;
+  font-weight: bold;
 }
 </style>
